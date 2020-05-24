@@ -1,0 +1,192 @@
+/* --- Universal styles -- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Share', cursive;
+}
+
+/* --- Element styles -- */
+
+header {
+  line-height: 80px;
+}
+
+form {
+  max-width: 90%;
+  margin: 10px auto;
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 700;
+  margin: 30px auto 10px auto;
+  color: #F6BD60;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 20px 30px 20px;
+  color: #302E2D;
+}
+
+button {
+  font-weight: 700;
+  padding: 19px 19px;
+  font-size: 1000px;
+  color: #fff;
+  background-color: #F6BD60;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  border: #F6BD60;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+div.line1 {
+  border-bottom: 3px solid #F6BD60;
+}
+
+div.line2 {
+  border-bottom: 2px solid #F6BD60;
+  padding-top: 3px;
+}
+
+legend {
+  font-size: 25px;
+  font-weight: 700;
+  color: #F6BD60;
+  text-align: left;
+  padding: 20px 0 20px 0;
+}
+
+button:hover {
+  opacity: 90%;
+}
+
+footer {
+  padding-top: 15px;
+  font-style: italic;
+}
+
+/* --- Class styles -- */
+
+.title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #4E598C;
+  color: #fff;
+  width: 100%;
+}
+
+
+/* --- Input, textarea, option, label and select styles -- */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #F7F7F7;
+  color: #8a97a0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  resize: none;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border: 2px solid #F6BD60;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+  text-align: right;
+  font-style: italic;
+  padding-right: 10px;
+}
+
+input[type="number"] {
+  width: 25%;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+  cursor: pointer;
+}
+
+option[value=""][selected] {
+  display: none;
+}
+
+label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-weight: 400;
+  color: #302E2D;
+}
+
+label.check {
+  font-weight: 400;
+  display: inline;
+  color: #302E2D;
+}
+
+
+/* -- Media query for desktop -- */
+
+@media screen and (min-width: 1024px) {
+
+  form {
+    width: 768px;
+    max-width: 2000px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .label,
+  .input {
+    flex-basis: 25%;
+  }
+
+  .input {
+    flex-basis: 75%;
+  }
+
+  .zip-box {
+    flex-basis: 20%;
+  }
+}
